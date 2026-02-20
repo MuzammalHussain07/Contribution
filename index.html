@@ -112,14 +112,19 @@
     <h2>آن لائن مشاورت فارم</h2>
     <p>براہ کرم نیچے دیا گیا فارم پُر کریں۔ آپ کی معلومات براہ راست ہمارے ای میل پر موصول ہو جائیں گی۔</p>
 
-    <form action="mailto:mhussain02345@gmail.com" method="POST" enctype="text/plain">
-        <input type="text" name="نام" placeholder="اپنا نام لکھیں" required style="width:90%;padding:10px;margin:8px;border-radius:8px;border:1px solid #ccc;"><br>
+    <form action="https://formsubmit.co/mhussain02345@gmail.com" method="POST">
         
-        <input type="email" name="ای میل" placeholder="اپنا ای میل لکھیں" required style="width:90%;padding:10px;margin:8px;border-radius:8px;border:1px solid #ccc;"><br>
+        <input type="hidden" name="_captcha" value="false">
+        <input type="hidden" name="_subject" value="New Consultation Request">
+        <input type="hidden" name="_template" value="table">
+
+        <input type="text" name="Name" placeholder="اپنا نام لکھیں" required style="width:90%;padding:10px;margin:8px;border-radius:8px;border:1px solid #ccc;"><br>
         
-        <input type="text" name="فون" placeholder="فون نمبر" style="width:90%;padding:10px;margin:8px;border-radius:8px;border:1px solid #ccc;"><br>
+        <input type="email" name="Email" placeholder="اپنا ای میل لکھیں" required style="width:90%;padding:10px;margin:8px;border-radius:8px;border:1px solid #ccc;"><br>
         
-        <textarea name="پیغام" placeholder="اپنا پیغام لکھیں" rows="5" required style="width:90%;padding:10px;margin:8px;border-radius:8px;border:1px solid #ccc;"></textarea><br>
+        <input type="text" name="Phone" placeholder="فون نمبر" style="width:90%;padding:10px;margin:8px;border-radius:8px;border:1px solid #ccc;"><br>
+        
+        <textarea name="Message" placeholder="اپنا پیغام لکھیں" rows="5" required style="width:90%;padding:10px;margin:8px;border-radius:8px;border:1px solid #ccc;"></textarea><br>
         
         <button type="submit">فارم جمع کریں</button>
     </form>
